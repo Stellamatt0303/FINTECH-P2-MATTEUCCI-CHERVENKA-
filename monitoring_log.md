@@ -62,7 +62,7 @@ Protocol disclosure: The team confirms the September 30, 2026 briefing table was
 
 In September, Track 1 returned -5.45% net, exceeding the equal-weighted benchmark's -5.78% by 0.34 percentage points, while Track 2 returned -0.84% net and exceeded the benchmark by 4.94 percentage points. The AI portfolio benefited from positive September returns in AMRX (+15.28%) and MTRN (+14.19%), while low-volatility holdings included weaker names such as CPB (-16.26%). The portfolios overlapped in 0 of 20 holdings, which helps explain why their monthly results differed. One live month is not evidence of persistent skill, and neither the locked strategy nor the frozen prompt was changed in response to performance.
 
-Checkpoint 1 GitHub submission date: October 11, 2026. The updated monitoring_log.md, September extension CSV, and completed notebook are scheduled to be committed on this date. Record the new GitHub commit hash once the commit is complete. The September 20 pre-registration commit remains unchanged.
+Checkpoint 1 GitHub submission date: October 11, 2026. The updated monitoring_log.md was committed to GitHub under commit `3f4ae4a`. The original September 20 pre-registration history remains preserved.
 
 ## CHECKPOINT 2 — due November 8, 2026
 
