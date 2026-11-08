@@ -64,9 +64,55 @@ In September, Track 1 returned -5.45% net, exceeding the equal-weighted benchmar
 
 Checkpoint 1 GitHub submission date: October 11, 2026. The updated monitoring_log.md was committed to GitHub under commit `3f4ae4a`. The original September 20 pre-registration history remains preserved.
 
-## CHECKPOINT 2 — due November 8, 2026
+## CHECKPOINT 2 — October scored and November portfolios (due November 8, 2026)
 
-Await October extension. Verify standing October Track 1 holdings, score both tracks and the benchmark, choose November portfolios, and record 3–5 attribution sentences.
+Pre-registration references carried forward from Checkpoint 1 — rules `210dc74`, locked strategy code `3a64986`, frozen prompt `94e5b50`, and original Entry 0 `e5e005b`. Checkpoint 1 correction `3f4ae4a` documents the original Entry 0 discrepancy. The archive does not establish a single commit containing all pre-registration artifacts.
+
+### 1. October extension and mechanical rerun
+
+The October extension, `panel_returns_2026-10-31.csv`, contains 94 monthly rows and 200 ticker columns. Its last row is October 30, 2026, the final trading day of the month. SHA-256 `f4732d3f86648720cb7de55cb7139ab788da8cd7872da9cad11420a5eac5da27` matches the instructor's Checkpoint 2 example. The August and September file hashes match the values recorded in Checkpoint 1. Comparing the CSV headers and rows confirmed that the September extension preserved all 92 August-file rows and the October extension preserved all 93 September-file rows.
+
+Running the archived strategy code unchanged on the October extension reproduced all 20 October Track 1 holdings from Checkpoint 1, using October 2023 through September 2026 for the signal and excluding the October 2026 return row. The two October portfolios used the standing holdings recorded in Checkpoint 1.
+
+Universe change — QRVO exited after October following its acquisition by Skyworks. Its final partial-month return (-0.27080%) is included in the October benchmark and in Track 2's October gross return because Track 2 held it. QRVO remains in the October briefing table and exits the investable universe for November.
+
+### 2. October 2026 performance
+
+Both tracks were equal-weighted. One-way turnover is new October names divided by 20 relative to the corresponding September portfolio. Trading cost is 2 × 0.0010 × turnover. The benchmark is the equal-weighted mean of all 200 October returns with zero trading cost. The two-month figures compound the September and October net returns.
+
+| Measure | Track 1 | Track 2 | Benchmark |
+| --- | --- | --- | --- |
+| Gross return | +5.37311% | +0.51670% | +5.63904% |
+| One-way turnover | 0.10 | 0.55 | 0.00 |
+| Trading cost (pp) | 0.02000 | 0.11000 | 0.00000 |
+| Net return | +5.35311% | +0.40670% | +5.63904% |
+| Gap vs benchmark (pp) | -0.28593 | -5.23234 | +0.00000 |
+| September–October compounded net return | -0.38660% | -0.43953% | -0.47148% |
+| Compounded gap vs benchmark (pp) | +0.08488 | +0.03195 | +0.00000 |
+
+### 3. November 2026 holdings
+
+**Track 1 — locked 36-month low-volatility rule, 20 names at 5% each**
+
+ADC, AVA, AWR, BATRK, BKH, BRX, CPK, CTRE, CWT, IDA, INGR, KRG, NJR, NNN, NWE, OGE, OTTR, POR, SBRA, STAG
+
+Signal window — November 2023 through October 2026. The written universe rule excludes QRVO for November. Applying that exclusion produces the same 20 names as the unchanged code on the full panel. CPK enters and SR exits. One-way turnover is 0.05, for a 0.01 percentage-point trading cost when November is scored.
+
+**Track 2 — November analyst run**
+
+Verbatim reply:
+
+RRC, HAE, PTEN, STGW, SM, QLYS, CROX, SAIC, R, CVI, MUR, FDS, URBN, MTDR, BKH, TTC, AVNT, KEX, CNK, AMG
+
+Run recorded November 7, 2026, at 8:41 p.m. Central Standard Time, using the team's local time zone. The team reported using ChatGPT GPT-5.6 Instant because the pre-registered GPT-5.6 Sol model with Light effort was unavailable in the selector. This is a model substitution and should be disclosed in the AI Audit Note. The run took place after the October extension's November 2 posting date shown in the instructor example.
+
+The supplied reply contains exactly 20 distinct tickers from the October briefing table, with no extra text. All 20 remained eligible for November. The October-to-November rebalance replaces 14 of 20 names, for one-way turnover of 0.70 and a trading cost of 0.14 percentage points when November is scored. The November portfolios overlap in 1 of 20 names (BKH).
+
+The October 30 briefing table has all 200 rows and matches the instructor example's generated text exactly.
+
+### 4. Attribution
+
+Both tracks trailed the +5.64% benchmark in October, with low volatility returning +5.35% net and the frozen analyst returning +0.41% net. Track 1 benefited from BKH (+17.02%), NWE (+16.72%), and SR (+15.65%), and its 10% turnover limited trading costs to 0.02 percentage points. Track 2 gains in QLYS (+19.72%), SAIC (+19.39%), and MUR (+18.72%) were partly offset by losses in MGNI (−14.92%), NEU (−12.69%), and BRKR (−11.86%), with 55% turnover costing 0.11 percentage points. The two tracks shared no October holdings, and both finished slightly ahead of the benchmark over September and October combined.
 
 ## CHECKPOINT 3 — due December 6, 2026
 
